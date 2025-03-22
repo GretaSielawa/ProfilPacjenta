@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_wall"
+    tools:context=".BookAppointmentActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Wybierz czas"
+        android:textColor="#301934"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBPinCode" />
+
+    <Button
+        android:id="@+id/buttonAppTime"
+        style="?android:spinnerStyle"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="10:00"
+        android:textColor="#673AB7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/buttonLTBBooking"
+        android:layout_width="318dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/btn_bg"
+        android:text="Wróć"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBookAppointment"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <EditText
+        android:id="@+id/editTextBMBContact"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:freezesText="true"
+        android:hint="Telefon kontaktowy"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBAddress"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <EditText
+        android:id="@+id/editTextLTBPinCode"
+        android:layout_width="303dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="236dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:freezesText="true"
+        android:hint="Płatność"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBMBContact"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <EditText
+        android:id="@+id/editTextLTBAddress"
+        android:layout_width="298dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:ems="10"
+        android:freezesText="true"
+        android:hint="Adres zamieszkania"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBFullName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil Pacjenta"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/textViewBMBPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umów wizytę"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <EditText
+        android:id="@+id/editTextLTBFullName"
+        android:layout_width="298dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:freezesText="true"
+        android:hint="Imię i Nazwizko"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMBPackageName" />
+
+    <Button
+        android:id="@+id/buttonBookAppointment"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/btn_bg"
+        android:text="Zarezerwuj wizytę"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBPinCode" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Wybierz datę"
+        android:textColor="#301934"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.224"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBPinCode"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonBMCartDate"
+        style="?android:spinnerStyle"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:text="12/12/2023"
+        android:textColor="#673AB7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

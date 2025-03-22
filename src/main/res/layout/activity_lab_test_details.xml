@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editTextBMDPackageName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".LabTestDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/textViewBMDCartTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="540dp"
+        android:text="Zamówione usługi"
+        android:textColor="@color/material_dynamic_neutral20"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHADTitle"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/textViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil Pacjenta"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <TextView
+        android:id="@+id/textViewHADTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Szczegóły zamówienia"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewLogo"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <Button
+        android:id="@+id/buttonHADBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Wróć"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonBMCardBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:text="Dodaj do koszyka"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDTotalCost"
+        app:layout_constraintVertical_bias="0.952" />
+
+    <TextView
+        android:id="@+id/textViewBMDTotalCost"
+        android:layout_width="204dp"
+        android:layout_height="48dp"
+        android:text="Koszt ogólny: "
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <EditText
+        android:id="@+id/editTextTextBMDMultiLine"
+        android:layout_width="207dp"
+        android:layout_height="198dp"
+        android:layout_marginBottom="296dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Hi Hello"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMDCartTitle"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
